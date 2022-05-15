@@ -1,0 +1,174 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/InterWeb/inter.css);
+@import url(../blocks/page/page.css);
+@import url(../blocks/page/_active/page_active.css);
+
+.header {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_active {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+}
+
+.header__logo {
+  display: block;
+  background: url(../images/dumpling.png) center no-repeat;
+  background-size: 50px 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.header__mobile {
+  display: none;
+}
+
+.header__links {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0 20px 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .header__links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    margin: 20px 20px 0 0;
+  }
+}
+
+.header__link {
+  margin: 0 0 0 10px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media screen and (max-width: 900px) {
+  .header__link {
+    margin: 20px 0 0;
+  }
+}
+
+.content {
+  margin: 100px 0;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.content__description {
+  max-width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.main__title {
+  font-size: 20px;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.main__description {
+  font-size: 13px;
+  line-height: 16px;
+  margin: 40px 0;
+}
+
+.video__main {
+  width: 40%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__numbers {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__booking {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  max-width: 200px;
+  transition: all .3s linear;
+  margin: 0;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px 10px;
+}
+
+.booking__link {
+
+}
+
+/* 
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__link/header__link.css);
+
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__info/profile__info.css);
+@import url(../blocks/profile/__main/profile__main.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__description/profile__description.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+
+@import url(../blocks/elements/elements.css);
+
+@import url(../blocks/element/element.css);
+@import url(../blocks/element/__image/element__image.css);
+@import url(../blocks/element/__title/element__title.css);
+@import url(../blocks/element/__text/element__text.css);
+@import url(../blocks/element/__like/element__like.css);
+@import url(../blocks/element/__like/_active/element__like_active.css);
+@import url(../blocks/element/__remove/element__remove.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__looking/popup__looking.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__description/popup__description.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__info/popup__info.css);
+@import url(../blocks/popup/__info/_value/popup__info_value_name.css);
+@import url(../blocks/popup/__info/_value/popup__info_value_description.css);
+@import url(../blocks/popup/__submit-button/popup__submit-button.css);
+@import url(../blocks/popup/__exit-button/popup__exit-button.css);
+ */
+
